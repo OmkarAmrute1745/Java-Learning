@@ -1,29 +1,41 @@
 /*
- * ============================================================
- * CONCEPT: 19ArithmeticOperators
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Arithmetic Operators
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Arithmetic operators perform mathematical calculations.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * They are used for totals, counters, percentages, and calculations in business logic.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * The main operators are +, -, *, /, and %.
+ *
+ * Important syntax / idea:
+ * Remember that integer division removes the decimal part.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 19ArithmeticOperators {
-
+class Concept19_ArithmeticOperators {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 19ArithmeticOperators");
+        int a = 10;
+        int b = 3;
+
+        System.out.println("Add: " + (a + b));
+        System.out.println("Subtract: " + (a - b));
+        System.out.println("Multiply: " + (a * b));
+        System.out.println("Divide: " + (a / b));
+        System.out.println("Remainder: " + (a % b));
     }
 }

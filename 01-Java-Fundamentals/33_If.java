@@ -1,21 +1,38 @@
 /*
- * CONCEPT: 33_If
+ * JAVA FUNDAMENTALS
+ * CONCEPT: if Statement
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * The if statement runs a block only when a condition is true.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * It is the basic decision-making statement in Java.
+ *
+ * Simple real-world example:
+ * For example, a system can process a payment only when the amount is greater than zero.
+ *
+ * Important syntax / idea:
+ * Syntax: `if (condition) { ... }`.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 33_If {
+class Concept33_If {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 33_If");
+        int amount = 500;
+
+        if (amount > 0) {
+            System.out.println("Payment amount is valid.");
+        }
     }
 }

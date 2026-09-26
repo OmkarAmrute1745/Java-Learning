@@ -1,29 +1,41 @@
 /*
- * ============================================================
- * CONCEPT: 18AutoboxingUnboxing
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Autoboxing and Unboxing
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Autoboxing converts a primitive to its wrapper object. Unboxing converts a wrapper object back to a primitive.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * Java performs these conversions automatically in many situations.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * This makes collections such as List<Integer> easier to use.
+ *
+ * Important syntax / idea:
+ * int -> Integer is boxing; Integer -> int is unboxing.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 18AutoboxingUnboxing {
-
+class Concept18_AutoboxingUnboxing {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 18AutoboxingUnboxing");
+        int primitive = 10;
+        Integer object = primitive; // Autoboxing.
+
+        Integer anotherObject = 20;
+        int anotherPrimitive = anotherObject; // Unboxing.
+
+        System.out.println(object);
+        System.out.println(anotherPrimitive);
     }
 }

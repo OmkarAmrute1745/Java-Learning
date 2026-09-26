@@ -1,29 +1,43 @@
 /*
- * ============================================================
- * CONCEPT: 14VariableScope
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Variable Scope
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Scope defines where a variable can be accessed.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * Scope prevents unrelated code from accidentally using local data.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * A local variable inside a method normally cannot be accessed directly from another method.
+ *
+ * Important syntax / idea:
+ * Common scopes include local, parameter, instance, and class-level variables.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
+class Concept14_VariableScope {
+    static int classValue = 100; // Class-level variable.
 
-public class 14VariableScope {
+    static void showScope(int parameter) {
+        int localValue = 20; // Only available inside this method.
+        System.out.println(classValue);
+        System.out.println(parameter);
+        System.out.println(localValue);
+    }
 
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 14VariableScope");
+        showScope(10);
     }
 }

@@ -1,21 +1,37 @@
 /*
- * CONCEPT: 63_ArrayLength
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Array length
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * The `length` field gives the number of elements in an array.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * It is commonly used to control loops safely.
+ *
+ * Simple real-world example:
+ * Array length is a field, not a method, so use `array.length`, not `array.length()`.
+ *
+ * Important syntax / idea:
+ * For a two-dimensional array, `matrix.length` is the number of rows.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 63_ArrayLength {
+class Concept63_ArrayLength {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 63_ArrayLength");
+        int[] numbers = {10, 20, 30, 40};
+
+        System.out.println("Length: " + numbers.length);
+        System.out.println("Last value: " + numbers[numbers.length - 1]);
     }
 }

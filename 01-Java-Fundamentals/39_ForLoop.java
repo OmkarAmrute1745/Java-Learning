@@ -1,21 +1,36 @@
 /*
- * CONCEPT: 39_ForLoop
+ * JAVA FUNDAMENTALS
+ * CONCEPT: for Loop
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * A for loop repeats a block while a loop condition remains true.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * It is useful when the number of iterations is known or controlled by a counter.
+ *
+ * Simple real-world example:
+ * A for loop usually has initialization, condition, and update parts.
+ *
+ * Important syntax / idea:
+ * Example: print numbers from 1 to 5.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 39_ForLoop {
+class Concept39_ForLoop {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 39_ForLoop");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
     }
 }

@@ -1,21 +1,39 @@
 /*
- * CONCEPT: 42_NestedLoops
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Nested Loops
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * A nested loop is a loop inside another loop.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * It is useful for tables, matrices, patterns, and two-dimensional data.
+ *
+ * Simple real-world example:
+ * For every iteration of the outer loop, the inner loop completes its iterations.
+ *
+ * Important syntax / idea:
+ * Be careful with nested loops because time complexity can grow quickly.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 42_NestedLoops {
+class Concept42_NestedLoops {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 42_NestedLoops");
+        for (int row = 1; row <= 3; row++) {
+            for (int column = 1; column <= 3; column++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }

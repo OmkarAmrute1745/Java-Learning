@@ -1,21 +1,45 @@
 /*
- * CONCEPT: 37_Switch
+ * JAVA FUNDAMENTALS
+ * CONCEPT: switch Statement
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * switch selects a block based on the value of an expression.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * It is useful for fixed choices such as menu options, status codes, or days.
+ *
+ * Simple real-world example:
+ * Traditional switch uses case labels and usually break statements.
+ *
+ * Important syntax / idea:
+ * A default case handles values that do not match.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 37_Switch {
+class Concept37_Switch {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 37_Switch");
+        int day = 2;
+
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            default:
+                System.out.println("Other day");
+        }
     }
 }

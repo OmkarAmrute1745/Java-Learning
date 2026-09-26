@@ -1,29 +1,36 @@
 /*
- * ============================================================
- * CONCEPT: 01WhatIsJava
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: What Is Java?
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Java is a high-level, object-oriented programming language designed to run on many platforms through the JVM.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * Java is useful for backend systems, web applications, Android history, enterprise software, and many large business applications.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * A Spring Boot service is written in Java and can run on Windows, Linux, or a cloud server.
+ *
+ * Important syntax / idea:
+ * Java source is compiled into bytecode, and the JVM runs that bytecode.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 01WhatIsJava {
-
+class Concept01_WhatIsJava {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 01WhatIsJava");
+        // Java code is written as source code.
+        System.out.println("Hello, Java!");
+        System.out.println("Java code runs through the JVM.");
     }
 }

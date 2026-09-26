@@ -1,29 +1,42 @@
 /*
- * ============================================================
- * CONCEPT: 10ReferenceDataTypes
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Reference Data Types
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * A reference variable stores a reference to an object rather than a primitive value.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * Reference types allow Java programs to work with objects, arrays, and classes.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * A Customer object variable can refer to a Customer object stored in memory.
+ *
+ * Important syntax / idea:
+ * Examples: String, arrays, and user-defined classes.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 10ReferenceDataTypes {
+class Concept10_ReferenceDataTypes {
+    static class Customer {
+        String name;
+        Customer(String name) {
+            this.name = name;
+        }
+    }
 
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 10ReferenceDataTypes");
+        Customer customer = new Customer("Omkar");
+        System.out.println(customer.name);
     }
 }

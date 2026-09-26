@@ -1,29 +1,41 @@
 /*
- * ============================================================
- * CONCEPT: 20RelationalOperators
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Relational Operators
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Relational operators compare two values and produce a boolean result.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * They are used in conditions such as age checks, validation, and business rules.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * Operators include ==, !=, >, <, >=, and <=.
+ *
+ * Important syntax / idea:
+ * The result is always true or false.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 20RelationalOperators {
-
+class Concept20_RelationalOperators {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 20RelationalOperators");
+        int age = 25;
+
+        System.out.println(age == 25);
+        System.out.println(age != 30);
+        System.out.println(age > 18);
+        System.out.println(age < 18);
+        System.out.println(age >= 25);
+        System.out.println(age <= 20);
     }
 }

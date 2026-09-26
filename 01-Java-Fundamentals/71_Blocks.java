@@ -1,21 +1,40 @@
 /*
- * CONCEPT: 71_Blocks
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Blocks
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * A block is a group of statements surrounded by curly braces.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * Blocks create scope and are used in methods, loops, conditions, and classes.
+ *
+ * Simple real-world example:
+ * Variables declared inside a block are normally available only within that block.
+ *
+ * Important syntax / idea:
+ * Understanding blocks helps explain variable scope and control flow.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 71_Blocks {
+class Concept71_Blocks {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 71_Blocks");
+        {
+            int value = 10;
+            System.out.println("Inside block: " + value);
+        }
+
+        // value is not accessible here because its block ended.
+        System.out.println("Block finished.");
     }
 }

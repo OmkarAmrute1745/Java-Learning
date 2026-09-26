@@ -1,29 +1,35 @@
 /*
- * ============================================================
- * CONCEPT: 05FirstJavaProgram
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: First Java Program
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * A Java application can start from the `main` method.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * The main method is the entry point used by the JVM when launching a normal Java class.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * A simple program such as a command-line utility starts here.
+ *
+ * Important syntax / idea:
+ * Syntax: public static void main(String[] args).
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 05FirstJavaProgram {
-
+class Concept05_FirstJavaProgram {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 05FirstJavaProgram");
+        // The JVM starts execution from this method.
+        System.out.println("My first Java program");
     }
 }

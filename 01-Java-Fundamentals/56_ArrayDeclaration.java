@@ -1,21 +1,41 @@
 /*
- * CONCEPT: 56_ArrayDeclaration
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Array Declaration
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * An array variable is declared with a type followed by `[]`.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * Declaration creates a reference variable; the actual array can be created later.
+ *
+ * Simple real-world example:
+ * The array type defines what kind of values it can store.
+ *
+ * Important syntax / idea:
+ * Examples: int[], String[], double[].
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 56_ArrayDeclaration {
+class Concept56_ArrayDeclaration {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 56_ArrayDeclaration");
+        int[] numbers;
+        String[] names;
+
+        numbers = new int[3];
+        names = new String[2];
+
+        System.out.println(numbers.length);
+        System.out.println(names.length);
     }
 }

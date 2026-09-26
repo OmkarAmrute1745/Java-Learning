@@ -1,21 +1,41 @@
 /*
- * CONCEPT: 22_AssignmentOperators
+ * JAVA FUNDAMENTALS
+ * CONCEPT: Assignment Operators
  *
- * Learning notes will include:
- * - Simple explanation
- * - Why we need it
- * - Real-world example
- * - Fully commented Java code
- * - Expected output
- * - Common mistakes
- * - Practice problem
- * - Interview questions
+ * What is it?
+ * Assignment operators store or update values in variables.
  *
- * Detailed lesson code will be added as we learn this concept.
+ * Why do we need it?
+ * They make repeated updates shorter and clearer.
+ *
+ * Simple real-world example:
+ * Besides `=`, Java provides `+=`, `-=`, `*=`, `/=`, and `%=`.
+ *
+ * Important syntax / idea:
+ * Example: `total += 10` means `total = total + 10`.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-public class 22_AssignmentOperators {
+class Concept22_AssignmentOperators {
     public static void main(String[] args) {
-        // Detailed example will be added while learning this concept.
-        System.out.println("Learning: 22_AssignmentOperators");
+        int total = 100;
+
+        total += 20;
+        total -= 10;
+        total *= 2;
+        total /= 2;
+
+        System.out.println("Total: " + total);
     }
 }

@@ -1,29 +1,36 @@
 /*
- * ============================================================
- * CONCEPT: 03HowJavaWorks
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: How Java Works
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * Java source code is compiled into bytecode. The JVM loads, verifies, and executes that bytecode.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * This design helps the same compiled Java program run on different operating systems that have a compatible JVM.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * For example, a compiled backend application can run on a Linux server even if the developer wrote it on Windows.
+ *
+ * Important syntax / idea:
+ * Source.java -> javac -> Source.class -> JVM -> machine instructions.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 03HowJavaWorks {
-
+class Concept03_HowJavaWorks {
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 03HowJavaWorks");
+        int number = 10;
+        System.out.println("Bytecode is executed by the JVM.");
+        System.out.println("Number: " + number);
     }
 }

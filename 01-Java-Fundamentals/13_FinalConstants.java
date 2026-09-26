@@ -1,29 +1,37 @@
 /*
- * ============================================================
- * CONCEPT: 13FinalConstants
- * ============================================================
+ * JAVA FUNDAMENTALS
+ * CONCEPT: final Constants
  *
- * This file is part of the Java Fundamentals learning journey.
+ * What is it?
+ * The `final` keyword prevents a variable from being assigned a new value after initialization.
  *
- * LEARNING FORMAT:
- * 1. Simple explanation
- * 2. Why we need this concept
- * 3. Real-world example
- * 4. Java code with comments
- * 5. Expected output
- * 6. Common mistakes
- * 7. Practice problem
- * 8. Interview questions
+ * Why do we need it?
+ * Constants are useful when a value should remain fixed during program execution.
  *
- * Detailed explanation and examples will be added while learning
- * this concept step by step.
- * ============================================================
+ * Simple real-world example:
+ * For example, a maximum retry count can be defined once and reused.
+ *
+ * Important syntax / idea:
+ * Common convention: constants use UPPER_SNAKE_CASE.
+ *
+ * Key points:
+ * - Understand the concept before memorizing syntax.
+ * - Run the example and change the values to see what happens.
+ * - Read the comments in the code; they explain the important parts.
+ *
+ * Interview note:
+ * Be able to explain this concept in simple words and give one
+ * practical example. Also understand the difference between similar
+ * concepts where applicable.
+ *
+ * Example output:
+ * The exact output depends on the values used in the program.
  */
-
-public class 13FinalConstants {
+class Concept13_FinalConstants {
+    static final int MAX_RETRIES = 3;
 
     public static void main(String[] args) {
-        // Learning example will be added here.
-        System.out.println("Learning: 13FinalConstants");
+        System.out.println("Maximum retries: " + MAX_RETRIES);
+        // MAX_RETRIES = 5; // Compile-time error.
     }
 }
