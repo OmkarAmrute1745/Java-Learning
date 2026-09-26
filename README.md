@@ -27,10 +27,5 @@ For each topic:
 - Java example
 - Code walkthrough
 - Output
-- Common mistakes
 - Practice problem
-- Interview questions
 
-## Daily Progress
-
-Learning will be added day by day as I complete each topic.
