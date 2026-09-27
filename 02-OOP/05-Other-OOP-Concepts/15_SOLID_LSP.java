@@ -17,4 +17,18 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface Flyable{void fly();}class Eagle implements Flyable{public void fly(){System.out.println("Eagle flies");}} class Concept15_SOLID_LSP{public static void main(String[]args){Flyable f=new Eagle();f.fly();}}
+
+interface Flyable {
+    void fly();
+}
+class Eagle implements Flyable {
+    public void fly() {
+        System.out.println("Eagle flies");
+    }
+}
+class Concept15_SOLID_LSP {
+    public static void main(String[]args) {
+        Flyable f=new Eagle();
+        f.fly();
+    }
+}

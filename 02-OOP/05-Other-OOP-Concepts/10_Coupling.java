@@ -17,4 +17,26 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface PaymentGateway{void pay(double amount);}class CardGateway implements PaymentGateway{public void pay(double a){System.out.println("Card "+a);}}class PaymentService{private final PaymentGateway gateway;PaymentService(PaymentGateway g){gateway=g;}void process(double a){gateway.pay(a);}} class Concept10_Coupling{public static void main(String[]args){new PaymentService(new CardGateway()).process(1000);}}
+
+interface PaymentGateway {
+    void pay(double amount);
+}
+class CardGateway implements PaymentGateway {
+    public void pay(double a) {
+        System.out.println("Card "+a);
+    }
+}
+class PaymentService {
+    private final PaymentGateway gateway;
+    PaymentService(PaymentGateway g) {
+        gateway=g;
+    }
+    void process(double a) {
+        gateway.pay(a);
+    }
+}
+class Concept10_Coupling {
+    public static void main(String[]args) {
+        new PaymentService(new CardGateway()).process(1000);
+    }
+}

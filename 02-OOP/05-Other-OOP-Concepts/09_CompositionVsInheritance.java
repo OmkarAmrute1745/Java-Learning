@@ -17,4 +17,24 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Engine{void start(){System.out.println("Engine");}}class Car{private final Engine engine;Car(Engine e){engine=e;}void start(){engine.start();System.out.println("Car");}} class Concept09_CompositionVsInheritance{public static void main(String[]args){new Car(new Engine()).start();}}
+
+class Engine {
+    void start() {
+        System.out.println("Engine");
+    }
+}
+class Car {
+    private final Engine engine;
+    Car(Engine e) {
+        engine=e;
+    }
+    void start() {
+        engine.start();
+        System.out.println("Car");
+    }
+}
+class Concept09_CompositionVsInheritance {
+    public static void main(String[]args) {
+        new Car(new Engine()).start();
+    }
+}

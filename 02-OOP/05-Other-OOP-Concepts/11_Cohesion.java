@@ -17,4 +17,17 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class PaymentCalculator{double tax(double a){return a*.18;}double total(double a){return a+tax(a);}} class Concept11_Cohesion{public static void main(String[]args){System.out.println(new PaymentCalculator().total(1000));}}
+
+class PaymentCalculator {
+    double tax(double a) {
+        return a*.18;
+    }
+    double total(double a) {
+        return a+tax(a);
+    }
+}
+class Concept11_Cohesion {
+    public static void main(String[]args) {
+        System.out.println(new PaymentCalculator().total(1000));
+    }
+}

@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Student{String name;Student(String n){name=n;}}class Course{void enroll(Student s){System.out.println(s.name+" enrolled");}} class Concept12_ObjectRelationships{public static void main(String[]args){new Course().enroll(new Student("Omkar"));}}
+
+class Student {
+    String name;
+    Student(String n) {
+        name=n;
+    }
+}
+class Course {
+    void enroll(Student s) {
+        System.out.println(s.name+" enrolled");
+    }
+}
+class Concept12_ObjectRelationships {
+    public static void main(String[]args) {
+        new Course().enroll(new Student("Omkar"));
+    }
+}

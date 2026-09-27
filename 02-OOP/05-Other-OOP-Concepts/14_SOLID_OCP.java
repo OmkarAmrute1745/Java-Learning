@@ -17,4 +17,22 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface Discount{double apply(double a);}class FestivalDiscount implements Discount{public double apply(double a){return a*.9;}}class Checkout{double total(double a,Discount d){return d.apply(a);}} class Concept14_SOLID_OCP{public static void main(String[]args){System.out.println(new Checkout().total(1000,new FestivalDiscount()));}}
+
+interface Discount {
+    double apply(double a);
+}
+class FestivalDiscount implements Discount {
+    public double apply(double a) {
+        return a*.9;
+    }
+}
+class Checkout {
+    double total(double a,Discount d) {
+        return d.apply(a);
+    }
+}
+class Concept14_SOLID_OCP {
+    public static void main(String[]args) {
+        System.out.println(new Checkout().total(1000,new FestivalDiscount()));
+    }
+}

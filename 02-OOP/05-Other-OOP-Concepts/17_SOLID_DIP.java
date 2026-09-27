@@ -17,4 +17,26 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface NotificationSender{void send(String m);}class EmailSender implements NotificationSender{public void send(String m){System.out.println("Email: "+m);}}class NotificationService{private final NotificationSender sender;NotificationService(NotificationSender s){sender=s;}void notifyUser(String m){sender.send(m);}} class Concept17_SOLID_DIP{public static void main(String[]args){new NotificationService(new EmailSender()).notifyUser("Welcome");}}
+
+interface NotificationSender {
+    void send(String m);
+}
+class EmailSender implements NotificationSender {
+    public void send(String m) {
+        System.out.println("Email: "+m);
+    }
+}
+class NotificationService {
+    private final NotificationSender sender;
+    NotificationService(NotificationSender s) {
+        sender=s;
+    }
+    void notifyUser(String m) {
+        sender.send(m);
+    }
+}
+class Concept17_SOLID_DIP {
+    public static void main(String[]args) {
+        new NotificationService(new EmailSender()).notifyUser("Welcome");
+    }
+}

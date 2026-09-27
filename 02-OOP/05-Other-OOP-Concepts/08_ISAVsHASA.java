@@ -17,4 +17,27 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Vehicle{void move(){System.out.println("Move");}}class Engine{void start(){System.out.println("Start");}}class Car extends Vehicle{private final Engine engine=new Engine();void start(){engine.start();}} class Concept08_ISAVsHASA{public static void main(String[]args){Car c=new Car();c.move();c.start();}}
+
+class Vehicle {
+    void move() {
+        System.out.println("Move");
+    }
+}
+class Engine {
+    void start() {
+        System.out.println("Start");
+    }
+}
+class Car extends Vehicle {
+    private final Engine engine=new Engine();
+    void start() {
+        engine.start();
+    }
+}
+class Concept08_ISAVsHASA {
+    public static void main(String[]args) {
+        Car c=new Car();
+        c.move();
+        c.start();
+    }
+}

@@ -17,4 +17,15 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Payment{}class UpiPayment extends Payment{} class Concept06_Instanceof{public static void main(String[]args){Payment p=new UpiPayment();System.out.println(p instanceof Payment);System.out.println(p instanceof UpiPayment);}}
+
+class Payment {
+}
+class UpiPayment extends Payment {
+}
+class Concept06_Instanceof {
+    public static void main(String[]args) {
+        Payment p=new UpiPayment();
+        System.out.println(p instanceof Payment);
+        System.out.println(p instanceof UpiPayment);
+    }
+}

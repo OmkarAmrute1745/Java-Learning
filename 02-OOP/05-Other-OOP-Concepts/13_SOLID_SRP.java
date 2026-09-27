@@ -17,4 +17,14 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class InvoiceCalculator{double total(double a,double tax){return a+tax;}} class Concept13_SOLID_SRP{public static void main(String[]args){System.out.println(new InvoiceCalculator().total(1000,180));}}
+
+class InvoiceCalculator {
+    double total(double a,double tax) {
+        return a+tax;
+    }
+}
+class Concept13_SOLID_SRP {
+    public static void main(String[]args) {
+        System.out.println(new InvoiceCalculator().total(1000,180));
+    }
+}

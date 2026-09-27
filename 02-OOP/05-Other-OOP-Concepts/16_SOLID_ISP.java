@@ -17,4 +17,21 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface Printable{void print();}interface Scannable{void scan();}class SimplePrinter implements Printable{public void print(){System.out.println("Printing");}} class Concept16_SOLID_ISP{public static void main(String[]args){Printable p=new SimplePrinter();p.print();}}
+
+interface Printable {
+    void print();
+}
+interface Scannable {
+    void scan();
+}
+class SimplePrinter implements Printable {
+    public void print() {
+        System.out.println("Printing");
+    }
+}
+class Concept16_SOLID_ISP {
+    public static void main(String[]args) {
+        Printable p=new SimplePrinter();
+        p.print();
+    }
+}

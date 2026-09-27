@@ -17,4 +17,24 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Animal{void eat(){System.out.println("Eat");}}class Dog extends Animal{void bark(){System.out.println("Bark");}} class Concept05_UpcastingDowncasting{public static void main(String[]args){Animal a=new Dog();a.eat();if(a instanceof Dog){Dog d=(Dog)a;d.bark();}}}
+
+class Animal {
+    void eat() {
+        System.out.println("Eat");
+    }
+}
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Bark");
+    }
+}
+class Concept05_UpcastingDowncasting {
+    public static void main(String[]args) {
+        Animal a=new Dog();
+        a.eat();
+        if(a instanceof Dog) {
+            Dog d=(Dog)a;
+            d.bark();
+        }
+    }
+}
