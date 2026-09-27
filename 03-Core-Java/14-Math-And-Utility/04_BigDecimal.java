@@ -1,12 +1,14 @@
 /**
- * Topic: 04 BigDecimal
+ * Topic: BigDecimal
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 04BigDecimal {
+class Concept04_BigDecimal {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 04 BigDecimal");
+        java.math.BigDecimal price = new java.math.BigDecimal("99.99");
+        java.math.BigDecimal tax = new java.math.BigDecimal("10.01");
+        System.out.println(price.add(tax));
     }
 }

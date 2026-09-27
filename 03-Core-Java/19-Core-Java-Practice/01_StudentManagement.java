@@ -1,28 +1,19 @@
 /**
- * Topic: 01 StudentManagement
+ * Topic: StudentManagement
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Student {
     int id;
     String name;
-
-    Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    Student(int id, String name) { this.id = id; this.name = name; }
 }
 
-public class 01StudentManagement {
+class Concept01_StudentManagement {
 
     public static void main(String[] args) {
-        Student[] students = {
-            new Student(1, "Omkar"),
-            new Student(2, "Rahul")
-        };
-        for (Student student : students) {
-            System.out.println(student.id + " " + student.name);
-        }
+        Student[] students = {new Student(1, "Omkar"), new Student(2, "Rahul")};
+        for (Student student : students) System.out.println(student.id + " " + student.name);
     }
 }

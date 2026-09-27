@@ -1,12 +1,12 @@
 /**
- * Topic: 02 EnumMethods
+ * Topic: EnumMethods
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 02EnumMethods {
+class Concept02_EnumMethods {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 02 EnumMethods");
+        System.out.println("Learning topic: EnumMethods");
     }
 }

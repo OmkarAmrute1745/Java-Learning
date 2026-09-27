@@ -1,13 +1,12 @@
 /**
- * Topic: 02 Random
+ * Topic: Random
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 02Random {
+class Concept02_Random {
 
     public static void main(String[] args) {
-        java.util.Random random = new java.util.Random();
-        System.out.println(random.nextInt(100));
+        System.out.println(new java.util.Random().nextInt(100));
     }
 }

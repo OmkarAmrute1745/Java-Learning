@@ -1,30 +1,18 @@
 /**
- * Topic: 02 BankAccount
+ * Topic: BankAccount
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Account {
     private double balance;
-
-    Account(double balance) {
-        this.balance = balance;
-    }
-
-    void deposit(double amount) {
-        if (amount > 0) balance += amount;
-    }
-
-    void withdraw(double amount) {
-        if (amount > 0 && amount <= balance) balance -= amount;
-    }
-
-    double getBalance() {
-        return balance;
-    }
+    Account(double balance) { this.balance = balance; }
+    void deposit(double amount) { if (amount > 0) balance += amount; }
+    void withdraw(double amount) { if (amount > 0 && amount <= balance) balance -= amount; }
+    double getBalance() { return balance; }
 }
 
-public class 02BankAccount {
+class Concept02_BankAccount {
 
     public static void main(String[] args) {
         Account account = new Account(1000);

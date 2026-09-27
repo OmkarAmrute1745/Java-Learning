@@ -1,12 +1,12 @@
 /**
- * Topic: 03 EnumWithSwitch
+ * Topic: EnumWithSwitch
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 03EnumWithSwitch {
+class Concept03_EnumWithSwitch {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 03 EnumWithSwitch");
+        System.out.println("Learning topic: EnumWithSwitch");
     }
 }

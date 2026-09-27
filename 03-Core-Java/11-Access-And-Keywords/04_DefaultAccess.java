@@ -1,12 +1,12 @@
 /**
- * Topic: 04 DefaultAccess
+ * Topic: DefaultAccess
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 04DefaultAccess {
+class Concept04_DefaultAccess {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 04 DefaultAccess");
+        System.out.println("Learning topic: DefaultAccess");
     }
 }

@@ -1,10 +1,10 @@
 /**
- * Topic: Array Initialization
+ * Topic: ArrayInitialization
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 03ArrayInitialization {
+class Concept03_ArrayInitialization {
 
     public static void main(String[] args) {
         int[] values = {30, 10, 20};

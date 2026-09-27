@@ -1,26 +1,18 @@
 /**
- * Topic: 01 ToString
+ * Topic: ToString
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Person {
     private final String name;
-
-    Person(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{name='" + name + "'}";
-    }
+    Person(String name) { this.name = name; }
+    @Override public String toString() { return "Person{name='" + name + "'}"; }
 }
 
-public class 01ToString {
+class Concept01_ToString {
 
     public static void main(String[] args) {
-        Person person = new Person("Omkar");
-        System.out.println(person);
+        System.out.println(new Person("Omkar"));
     }
 }

@@ -1,18 +1,16 @@
 /**
- * Topic: Variable Arguments
+ * Topic: VariableArguments
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
     static int sum(int... numbers) {
         int total = 0;
-        for (int number : numbers) {
-            total += number;
-        }
+        for (int number : numbers) total += number;
         return total;
     }
 
-public class 08VariableArguments {
+class Concept08_VariableArguments {
 
     public static void main(String[] args) {
         System.out.println(sum(10, 20, 30));

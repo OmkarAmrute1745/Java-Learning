@@ -1,14 +1,14 @@
 /**
- * Topic: Wrapper Classes
+ * Topic: WrapperClasses
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 01WrapperClasses {
+class Concept01_WrapperClasses {
 
     public static void main(String[] args) {
-        Integer age = Integer.valueOf(25);
-        Double salary = Double.valueOf(50000.50);
+        Integer age = 25;
+        Double salary = 50000.50;
         System.out.println(age);
         System.out.println(salary);
     }

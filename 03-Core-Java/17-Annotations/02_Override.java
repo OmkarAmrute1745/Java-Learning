@@ -1,12 +1,12 @@
 /**
- * Topic: 02 Override
+ * Topic: Override
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 02Override {
+class Concept02_Override {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 02 Override");
+        System.out.println("Learning topic: Override");
     }
 }

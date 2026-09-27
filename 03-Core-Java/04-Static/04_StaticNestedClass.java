@@ -1,18 +1,16 @@
 /**
- * Topic: 04 StaticNestedClass
+ * Topic: StaticNestedClass
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Outer {
     static class Inner {
-        void show() {
-            System.out.println("Static nested class");
-        }
+        void show() { System.out.println("Nested class"); }
     }
 }
 
-public class 04StaticNestedClass {
+class Concept04_StaticNestedClass {
 
     public static void main(String[] args) {
         Outer.Inner inner = new Outer.Inner();

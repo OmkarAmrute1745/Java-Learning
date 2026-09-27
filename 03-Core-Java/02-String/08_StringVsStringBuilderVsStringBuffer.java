@@ -1,14 +1,19 @@
 /**
- * Topic: String vs StringBuilder vs StringBuffer
+ * Topic: StringVsStringBuilderVsStringBuffer
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 08StringVsStringBuilderVsStringBuffer {
+class Concept08_StringVsStringBuilderVsStringBuffer {
 
     public static void main(String[] args) {
-        StringBuilder value = new StringBuilder("Java");
-        value.append(" Backend");
-        System.out.println(value);
+        String text = "Java";
+        StringBuilder builder = new StringBuilder(text);
+        StringBuffer buffer = new StringBuffer(text);
+        builder.append(" Builder");
+        buffer.append(" Buffer");
+        System.out.println(text);
+        System.out.println(builder);
+        System.out.println(buffer);
     }
 }

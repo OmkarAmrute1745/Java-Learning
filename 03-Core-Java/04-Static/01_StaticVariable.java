@@ -1,22 +1,19 @@
 /**
- * Topic: 01 StaticVariable
+ * Topic: StaticVariable
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Counter {
     static int count;
-
-    Counter() {
-        count++;
-    }
+    Counter() { count++; }
 }
 
-public class 01StaticVariable {
+class Concept01_StaticVariable {
 
     public static void main(String[] args) {
-        Counter first = new Counter();
-        Counter second = new Counter();
+        new Counter();
+        new Counter();
         System.out.println(Counter.count);
     }
 }

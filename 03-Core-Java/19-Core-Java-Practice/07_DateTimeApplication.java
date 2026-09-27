@@ -1,10 +1,10 @@
 /**
- * Topic: 07 DateTimeApplication
+ * Topic: DateTimeApplication
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 07DateTimeApplication {
+class Concept07_DateTimeApplication {
 
     public static void main(String[] args) {
         java.time.LocalDate today = java.time.LocalDate.now();

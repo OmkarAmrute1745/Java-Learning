@@ -1,8 +1,8 @@
 /**
- * Topic: 04 SimpleCalculator
+ * Topic: SimpleCalculator
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
     static double calculate(double first, double second, char operator) {
         return switch (operator) {
@@ -14,7 +14,7 @@
         };
     }
 
-public class 04SimpleCalculator {
+class Concept04_SimpleCalculator {
 
     public static void main(String[] args) {
         System.out.println(calculate(10, 5, '+'));

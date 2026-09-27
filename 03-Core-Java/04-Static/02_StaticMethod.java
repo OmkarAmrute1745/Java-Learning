@@ -1,16 +1,14 @@
 /**
- * Topic: 02 StaticMethod
+ * Topic: StaticMethod
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class MathUtil {
-    static int square(int number) {
-        return number * number;
-    }
+    static int square(int number) { return number * number; }
 }
 
-public class 02StaticMethod {
+class Concept02_StaticMethod {
 
     public static void main(String[] args) {
         System.out.println(MathUtil.square(5));

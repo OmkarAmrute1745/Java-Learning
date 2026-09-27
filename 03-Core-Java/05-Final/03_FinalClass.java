@@ -1,16 +1,14 @@
 /**
- * Topic: 03 FinalClass
+ * Topic: FinalClass
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 final class Utility {
-    static void show() {
-        System.out.println("Final class cannot be extended");
-    }
+    static void show() { System.out.println("Final class"); }
 }
 
-public class 03FinalClass {
+class Concept03_FinalClass {
 
     public static void main(String[] args) {
         Utility.show();

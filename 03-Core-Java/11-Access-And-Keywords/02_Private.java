@@ -1,12 +1,12 @@
 /**
- * Topic: 02 Private
+ * Topic: Private
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 02Private {
+class Concept02_Private {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 02 Private");
+        System.out.println("Learning topic: Private");
     }
 }

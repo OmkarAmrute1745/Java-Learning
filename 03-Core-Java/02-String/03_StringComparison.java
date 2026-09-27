@@ -1,10 +1,10 @@
 /**
- * Topic: String Comparison
+ * Topic: StringComparison
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 03StringComparison {
+class Concept03_StringComparison {
 
     public static void main(String[] args) {
         String first = new String("Java");

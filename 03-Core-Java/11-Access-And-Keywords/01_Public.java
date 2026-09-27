@@ -1,12 +1,12 @@
 /**
- * Topic: 01 Public
+ * Topic: Public
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 01Public {
+class Concept01_Public {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 01 Public");
+        System.out.println("Learning topic: Public");
     }
 }

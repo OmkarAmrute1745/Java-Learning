@@ -1,10 +1,10 @@
 /**
- * Topic: 05 StringOperations
+ * Topic: StringOperations
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 05StringOperations {
+class Concept05_StringOperations {
 
     public static void main(String[] args) {
         String value = "Java Backend Developer";

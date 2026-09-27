@@ -1,22 +1,17 @@
 /**
- * Topic: 02 FinalMethod
+ * Topic: FinalMethod
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
 class Parent {
-    final void show() {
-        System.out.println("Parent final method");
-    }
+    final void show() { System.out.println("Final method"); }
 }
+class Child extends Parent {}
 
-class Child extends Parent {
-}
-
-public class 02FinalMethod {
+class Concept02_FinalMethod {
 
     public static void main(String[] args) {
-        Parent parent = new Child();
-        parent.show();
+        new Child().show();
     }
 }

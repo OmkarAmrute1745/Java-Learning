@@ -1,12 +1,17 @@
 /**
- * Topic: 03 Deprecated
+ * Topic: Deprecated
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 03Deprecated {
+class LegacyApi {
+    @Deprecated
+    static void oldMethod() { System.out.println("Legacy method"); }
+}
+
+class Concept03_Deprecated {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 03 Deprecated");
+        LegacyApi.oldMethod();
     }
 }

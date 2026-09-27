@@ -1,12 +1,12 @@
 /**
- * Topic: 05 GarbageCollector
+ * Topic: GarbageCollector
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 05GarbageCollector {
+class Concept05_GarbageCollector {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 05 GarbageCollector");
+        System.out.println("Learning topic: GarbageCollector");
     }
 }

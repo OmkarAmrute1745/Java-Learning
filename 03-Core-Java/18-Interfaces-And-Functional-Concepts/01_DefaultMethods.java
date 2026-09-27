@@ -1,12 +1,22 @@
 /**
- * Topic: 01 DefaultMethods
+ * Topic: DefaultMethods
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 01DefaultMethods {
+interface Vehicle {
+    void start();
+    default void printType() { System.out.println("Vehicle"); }
+}
+class Car implements Vehicle {
+    public void start() { System.out.println("Car started"); }
+}
+
+class Concept01_DefaultMethods {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 01 DefaultMethods");
+        Vehicle vehicle = new Car();
+        vehicle.start();
+        vehicle.printType();
     }
 }

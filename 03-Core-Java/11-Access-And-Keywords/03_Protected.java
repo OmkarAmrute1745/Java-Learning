@@ -1,12 +1,12 @@
 /**
- * Topic: 03 Protected
+ * Topic: Protected
  *
- * Part of the Core Java learning roadmap.
- * Study the concept, run the example, then modify it and observe the result.
+ * Core Java learning example.
+ * Understand the concept, run the program, then modify it and practice.
  */
-public class 03Protected {
+class Concept03_Protected {
 
     public static void main(String[] args) {
-        System.out.println("Learning topic: 03 Protected");
+        System.out.println("Learning topic: Protected");
     }
 }
