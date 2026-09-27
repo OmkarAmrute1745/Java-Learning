@@ -17,4 +17,28 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Payment{void pay(){System.out.println("Generic");}}class CardPayment extends Payment{@Override void pay(){System.out.println("Card");}}class UpiPayment extends Payment{@Override void pay(){System.out.println("UPI");}} class Concept04_RuntimePolymorphism{static void process(Payment p){p.pay();}public static void main(String[]args){process(new CardPayment());process(new UpiPayment());}}
+
+class Payment {
+    void pay() {
+        System.out.println("Generic");
+    }
+}
+class CardPayment extends Payment {
+    @Override void pay() {
+        System.out.println("Card");
+    }
+}
+class UpiPayment extends Payment {
+    @Override void pay() {
+        System.out.println("UPI");
+    }
+}
+class Concept04_RuntimePolymorphism {
+    static void process(Payment p) {
+        p.pay();
+    }
+    public static void main(String[]args) {
+        process(new CardPayment());
+        process(new UpiPayment());
+    }
+}

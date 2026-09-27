@@ -17,4 +17,21 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Engine{void start(){System.out.println("Engine");}}class Car{private final Engine engine=new Engine();void start(){engine.start();System.out.println("Car");}} class Concept04_Composition{public static void main(String[]args){new Car().start();}}
+
+class Engine {
+    void start() {
+        System.out.println("Engine");
+    }
+}
+class Car {
+    private final Engine engine=new Engine();
+    void start() {
+        engine.start();
+        System.out.println("Car");
+    }
+}
+class Concept04_Composition {
+    public static void main(String[]args) {
+        new Car().start();
+    }
+}

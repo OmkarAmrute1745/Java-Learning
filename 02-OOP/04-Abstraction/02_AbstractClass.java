@@ -17,4 +17,22 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-abstract class Report{void header(){System.out.println("REPORT");}abstract void generate();}class SalesReport extends Report{@Override void generate(){System.out.println("Sales");}} class Concept02_AbstractClass{public static void main(String[]args){Report r=new SalesReport();r.header();r.generate();}}
+
+abstract class Report {
+    void header() {
+        System.out.println("REPORT");
+    }
+    abstract void generate();
+}
+class SalesReport extends Report {
+    @Override void generate() {
+        System.out.println("Sales");
+    }
+}
+class Concept02_AbstractClass {
+    public static void main(String[]args) {
+        Report r=new SalesReport();
+        r.header();
+        r.generate();
+    }
+}

@@ -17,4 +17,25 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface Camera{void takePhoto();}interface MusicPlayer{void play();}class SmartPhone implements Camera,MusicPlayer{public void takePhoto(){System.out.println("Photo");}public void play(){System.out.println("Music");}} class Concept05_MultipleInterfaces{public static void main(String[]args){SmartPhone s=new SmartPhone();s.takePhoto();s.play();}}
+
+interface Camera {
+    void takePhoto();
+}
+interface MusicPlayer {
+    void play();
+}
+class SmartPhone implements Camera,MusicPlayer {
+    public void takePhoto() {
+        System.out.println("Photo");
+    }
+    public void play() {
+        System.out.println("Music");
+    }
+}
+class Concept05_MultipleInterfaces {
+    public static void main(String[]args) {
+        SmartPhone s=new SmartPhone();
+        s.takePhoto();
+        s.play();
+    }
+}

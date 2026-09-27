@@ -17,4 +17,29 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Parent{void show(int x){System.out.println("Parent int");}void display(){System.out.println("Parent");}}class Child extends Parent{void show(String x){System.out.println("Child String");}@Override void display(){System.out.println("Child");}} class Concept06_StaticVsDynamicBinding{public static void main(String[]args){Child c=new Child();c.show(1);c.show("x");Parent p=new Child();p.display();}}
+
+class Parent {
+    void show(int x) {
+        System.out.println("Parent int");
+    }
+    void display() {
+        System.out.println("Parent");
+    }
+}
+class Child extends Parent {
+    void show(String x) {
+        System.out.println("Child String");
+    }
+    @Override void display() {
+        System.out.println("Child");
+    }
+}
+class Concept06_StaticVsDynamicBinding {
+    public static void main(String[]args) {
+        Child c=new Child();
+        c.show(1);
+        c.show("x");
+        Parent p=new Child();
+        p.display();
+    }
+}

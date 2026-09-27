@@ -17,4 +17,27 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Shape{void draw(){System.out.println("Shape");}}class Circle extends Shape{@Override void draw(){System.out.println("Circle");}}class Rectangle extends Shape{@Override void draw(){System.out.println("Rectangle");}} class Concept05_DynamicMethodDispatch{public static void main(String[]args){Shape s=new Circle();s.draw();s=new Rectangle();s.draw();}}
+
+class Shape {
+    void draw() {
+        System.out.println("Shape");
+    }
+}
+class Circle extends Shape {
+    @Override void draw() {
+        System.out.println("Circle");
+    }
+}
+class Rectangle extends Shape {
+    @Override void draw() {
+        System.out.println("Rectangle");
+    }
+}
+class Concept05_DynamicMethodDispatch {
+    public static void main(String[]args) {
+        Shape s=new Circle();
+        s.draw();
+        s=new Rectangle();
+        s.draw();
+    }
+}

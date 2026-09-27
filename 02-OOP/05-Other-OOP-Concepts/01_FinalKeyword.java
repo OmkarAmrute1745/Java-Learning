@@ -17,4 +17,16 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-final class Utility{static final double TAX=.18;final void show(){System.out.println("Fixed");}} class Concept01_FinalKeyword{public static void main(String[]args){System.out.println(Utility.TAX);new Utility().show();}}
+
+final class Utility {
+    static final double TAX=.18;
+    final void show() {
+        System.out.println("Fixed");
+    }
+}
+class Concept01_FinalKeyword {
+    public static void main(String[]args) {
+        System.out.println(Utility.TAX);
+        new Utility().show();
+    }
+}

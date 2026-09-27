@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Student{String name;Student(String n){name=n;}}class Teacher{void teach(Student s){System.out.println("Teaching "+s.name);}} class Concept02_Association{public static void main(String[]args){new Teacher().teach(new Student("Omkar"));}}
+
+class Student {
+    String name;
+    Student(String n) {
+        name=n;
+    }
+}
+class Teacher {
+    void teach(Student s) {
+        System.out.println("Teaching "+s.name);
+    }
+}
+class Concept02_Association {
+    public static void main(String[]args) {
+        new Teacher().teach(new Student("Omkar"));
+    }
+}

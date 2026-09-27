@@ -17,4 +17,19 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Printer{void print(int x){System.out.println("int");}void print(String x){System.out.println("String");}} class Concept03_CompileTimePolymorphism{public static void main(String[]args){Printer p=new Printer();p.print(10);p.print("Java");}}
+
+class Printer {
+    void print(int x) {
+        System.out.println("int");
+    }
+    void print(String x) {
+        System.out.println("String");
+    }
+}
+class Concept03_CompileTimePolymorphism {
+    public static void main(String[]args) {
+        Printer p=new Printer();
+        p.print(10);
+        p.print("Java");
+    }
+}

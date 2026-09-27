@@ -17,4 +17,22 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-abstract class PaymentService{abstract void pay(double amount);void status(){System.out.println("Ready");}}class CardService extends PaymentService{@Override void pay(double amount){System.out.println("Card "+amount);}} class Concept01_Abstraction{public static void main(String[]args){PaymentService p=new CardService();p.status();p.pay(1500);}}
+
+abstract class PaymentService {
+    abstract void pay(double amount);
+    void status() {
+        System.out.println("Ready");
+    }
+}
+class CardService extends PaymentService {
+    @Override void pay(double amount) {
+        System.out.println("Card "+amount);
+    }
+}
+class Concept01_Abstraction {
+    public static void main(String[]args) {
+        PaymentService p=new CardService();
+        p.status();
+        p.pay(1500);
+    }
+}

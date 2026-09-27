@@ -17,4 +17,28 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-import java.util.*;class Teacher{String name;Teacher(String n){name=n;}}class Department{List<Teacher> teachers;Department(List<Teacher> t){teachers=t;}void show(){for(Teacher t:teachers)System.out.println(t.name);}} class Concept03_Aggregation{public static void main(String[]args){List<Teacher> t=new ArrayList<>();t.add(new Teacher("Amit"));t.add(new Teacher("Neha"));new Department(t).show();}}
+
+import java.util.*;
+class Teacher {
+    String name;
+    Teacher(String n) {
+        name=n;
+    }
+}
+class Department {
+    List<Teacher> teachers;
+    Department(List<Teacher> t) {
+        teachers=t;
+    }
+    void show() {
+        for(Teacher t:teachers)System.out.println(t.name);
+    }
+}
+class Concept03_Aggregation {
+    public static void main(String[]args) {
+        List<Teacher> t=new ArrayList<>();
+        t.add(new Teacher("Amit"));
+        t.add(new Teacher("Neha"));
+        new Department(t).show();
+    }
+}

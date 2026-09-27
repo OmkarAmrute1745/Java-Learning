@@ -17,4 +17,32 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-abstract class Vehicle{protected String brand;Vehicle(String b){brand=b;}abstract void move();}interface Electric{void charge();}class ElectricCar extends Vehicle implements Electric{ElectricCar(String b){super(b);}void move(){System.out.println(brand+" moves");}public void charge(){System.out.println("Charging");}} class Concept06_AbstractClassVsInterface{public static void main(String[]args){ElectricCar c=new ElectricCar("EV");c.move();c.charge();}}
+
+abstract class Vehicle {
+    protected String brand;
+    Vehicle(String b) {
+        brand=b;
+    }
+    abstract void move();
+}
+interface Electric {
+    void charge();
+}
+class ElectricCar extends Vehicle implements Electric {
+    ElectricCar(String b) {
+        super(b);
+    }
+    void move() {
+        System.out.println(brand+" moves");
+    }
+    public void charge() {
+        System.out.println("Charging");
+    }
+}
+class Concept06_AbstractClassVsInterface {
+    public static void main(String[]args) {
+        ElectricCar c=new ElectricCar("EV");
+        c.move();
+        c.charge();
+    }
+}

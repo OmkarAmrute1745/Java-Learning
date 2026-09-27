@@ -17,4 +17,25 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-interface Logger{void log(String s);default void info(String s){log("[INFO] "+s);}static String name(){return "Java Learning";}}class ConsoleLogger implements Logger{public void log(String s){System.out.println(s);}} class Concept04_InterfaceMethods{public static void main(String[]args){Logger l=new ConsoleLogger();l.info("Started");System.out.println(Logger.name());}}
+
+interface Logger {
+    void log(String s);
+    default void info(String s) {
+        log("[INFO] "+s);
+    }
+    static String name() {
+        return "Java Learning";
+    }
+}
+class ConsoleLogger implements Logger {
+    public void log(String s) {
+        System.out.println(s);
+    }
+}
+class Concept04_InterfaceMethods {
+    public static void main(String[]args) {
+        Logger l=new ConsoleLogger();
+        l.info("Started");
+        System.out.println(Logger.name());
+    }
+}
