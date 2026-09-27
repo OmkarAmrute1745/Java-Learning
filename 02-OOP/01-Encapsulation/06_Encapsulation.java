@@ -17,4 +17,31 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class BankAccount{private double balance;BankAccount(double b){if(b>=0)balance=b;}void deposit(double a){if(a>0)balance+=a;}boolean withdraw(double a){if(a>0&&a<=balance){balance-=a;return true;}return false;}double getBalance(){return balance;}} class Concept06_Encapsulation{public static void main(String[]args){BankAccount a=new BankAccount(1000);a.deposit(500);System.out.println(a.withdraw(300));System.out.println(a.getBalance());}}
+
+class BankAccount {
+    private double balance;
+    BankAccount(double b) {
+        if(b>=0)balance=b;
+    }
+    void deposit(double a) {
+        if(a>0)balance+=a;
+    }
+    boolean withdraw(double a) {
+        if(a>0&&a<=balance) {
+            balance-=a;
+            return true;
+        }
+        return false;
+    }
+    double getBalance() {
+        return balance;
+    }
+}
+class Concept06_Encapsulation {
+    public static void main(String[]args) {
+        BankAccount a=new BankAccount(1000);
+        a.deposit(500);
+        System.out.println(a.withdraw(300));
+        System.out.println(a.getBalance());
+    }
+}

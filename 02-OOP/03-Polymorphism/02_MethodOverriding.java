@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Notification{void send(){System.out.println("Notification");}}class EmailNotification extends Notification{@Override void send(){System.out.println("Email");}} class Concept02_MethodOverriding{public static void main(String[]args){Notification n=new EmailNotification();n.send();}}
+
+class Notification {
+    void send() {
+        System.out.println("Notification");
+    }
+}
+class EmailNotification extends Notification {
+    @Override void send() {
+        System.out.println("Email");
+    }
+}
+class Concept02_MethodOverriding {
+    public static void main(String[]args) {
+        Notification n=new EmailNotification();
+        n.send();
+    }
+}

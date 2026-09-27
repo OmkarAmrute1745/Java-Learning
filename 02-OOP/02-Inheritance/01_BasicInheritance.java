@@ -17,4 +17,21 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Animal{void eat(){System.out.println("Animal eats");}}class Dog extends Animal{void bark(){System.out.println("Dog barks");}} class Concept01_BasicInheritance{public static void main(String[]args){Dog d=new Dog();d.eat();d.bark();}}
+
+class Animal {
+    void eat() {
+        System.out.println("Animal eats");
+    }
+}
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+class Concept01_BasicInheritance {
+    public static void main(String[]args) {
+        Dog d=new Dog();
+        d.eat();
+        d.bark();
+    }
+}

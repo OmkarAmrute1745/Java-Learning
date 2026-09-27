@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Employee{int id;String name;Employee(int i,String n){this.id=i;this.name=n;}void show(){System.out.println(this.id+" "+this.name);}} class Concept03_ThisKeyword{public static void main(String[]args){new Employee(101,"Omkar").show();}}
+
+class Employee {
+    int id;
+    String name;
+    Employee(int i,String n) {
+        this.id=i;
+        this.name=n;
+    }
+    void show() {
+        System.out.println(this.id+" "+this.name);
+    }
+}
+class Concept03_ThisKeyword {
+    public static void main(String[]args) {
+        new Employee(101,"Omkar").show();
+    }
+}

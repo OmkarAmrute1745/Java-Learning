@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Employee{private double salary;public double getSalary(){return salary;}public void setSalary(double s){if(s>=0)salary=s;}} class Concept05_GettersAndSetters{public static void main(String[]args){Employee e=new Employee();e.setSalary(50000);System.out.println(e.getSalary());}}
+
+class Employee {
+    private double salary;
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double s) {
+        if(s>=0)salary=s;
+    }
+}
+class Concept05_GettersAndSetters {
+    public static void main(String[]args) {
+        Employee e=new Employee();
+        e.setSalary(50000);
+        System.out.println(e.getSalary());
+    }
+}

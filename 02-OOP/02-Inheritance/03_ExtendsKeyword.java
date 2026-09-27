@@ -17,4 +17,21 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class BankAccount{void deposit(){System.out.println("Deposit");}}class SavingsAccount extends BankAccount{void interest(){System.out.println("Interest");}} class Concept03_ExtendsKeyword{public static void main(String[]args){SavingsAccount a=new SavingsAccount();a.deposit();a.interest();}}
+
+class BankAccount {
+    void deposit() {
+        System.out.println("Deposit");
+    }
+}
+class SavingsAccount extends BankAccount {
+    void interest() {
+        System.out.println("Interest");
+    }
+}
+class Concept03_ExtendsKeyword {
+    public static void main(String[]args) {
+        SavingsAccount a=new SavingsAccount();
+        a.deposit();
+        a.interest();
+    }
+}

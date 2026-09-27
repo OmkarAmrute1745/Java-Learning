@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Account{String number;double balance;void deposit(double a){balance+=a;}} class Concept01_ClassesAndObjects{public static void main(String[]args){Account a=new Account();a.number="A101";a.balance=1000;a.deposit(500);System.out.println(a.number+" "+a.balance);}}
+
+class Account {
+    String number;
+    double balance;
+    void deposit(double a) {
+        balance+=a;
+    }
+}
+class Concept01_ClassesAndObjects {
+    public static void main(String[]args) {
+        Account a=new Account();
+        a.number="A101";
+        a.balance=1000;
+        a.deposit(500);
+        System.out.println(a.number+" "+a.balance);
+    }
+}

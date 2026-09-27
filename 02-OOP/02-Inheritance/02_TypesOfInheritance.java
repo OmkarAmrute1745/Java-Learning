@@ -17,4 +17,27 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Vehicle{void start(){System.out.println("Start");}}class Car extends Vehicle{}class SportsCar extends Car{void turbo(){System.out.println("Turbo");}}class Bike extends Vehicle{void ride(){System.out.println("Bike");}} class Concept02_TypesOfInheritance{public static void main(String[]args){new SportsCar().turbo();new Bike().ride();}}
+
+class Vehicle {
+    void start() {
+        System.out.println("Start");
+    }
+}
+class Car extends Vehicle {
+}
+class SportsCar extends Car {
+    void turbo() {
+        System.out.println("Turbo");
+    }
+}
+class Bike extends Vehicle {
+    void ride() {
+        System.out.println("Bike");
+    }
+}
+class Concept02_TypesOfInheritance {
+    public static void main(String[]args) {
+        new SportsCar().turbo();
+        new Bike().ride();
+    }
+}

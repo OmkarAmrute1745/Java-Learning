@@ -17,4 +17,18 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Vehicle{void move(){System.out.println("Move");}}class Car extends Vehicle{} class Concept06_ISARelationship{public static void main(String[]args){Car c=new Car();System.out.println(c instanceof Vehicle);c.move();}}
+
+class Vehicle {
+    void move() {
+        System.out.println("Move");
+    }
+}
+class Car extends Vehicle {
+}
+class Concept06_ISARelationship {
+    public static void main(String[]args) {
+        Car c=new Car();
+        System.out.println(c instanceof Vehicle);
+        c.move();
+    }
+}

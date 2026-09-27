@@ -17,4 +17,19 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Calculator{int add(int a,int b){return a+b;}double add(double a,double b){return a+b;}} class Concept01_MethodOverloading{public static void main(String[]args){Calculator c=new Calculator();System.out.println(c.add(1,2));System.out.println(c.add(1.5,2.5));}}
+
+class Calculator {
+    int add(int a,int b) {
+        return a+b;
+    }
+    double add(double a,double b) {
+        return a+b;
+    }
+}
+class Concept01_MethodOverloading {
+    public static void main(String[]args) {
+        Calculator c=new Calculator();
+        System.out.println(c.add(1,2));
+        System.out.println(c.add(1.5,2.5));
+    }
+}

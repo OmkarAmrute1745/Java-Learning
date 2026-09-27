@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Account{private double balance=1000;public void deposit(double a){if(a>0)balance+=a;}public double getBalance(){return balance;}} class Concept04_AccessModifiers{public static void main(String[]args){Account a=new Account();a.deposit(500);System.out.println(a.getBalance());}}
+
+class Account {
+    private double balance=1000;
+    public void deposit(double a) {
+        if(a>0)balance+=a;
+    }
+    public double getBalance() {
+        return balance;
+    }
+}
+class Concept04_AccessModifiers {
+    public static void main(String[]args) {
+        Account a=new Account();
+        a.deposit(500);
+        System.out.println(a.getBalance());
+    }
+}

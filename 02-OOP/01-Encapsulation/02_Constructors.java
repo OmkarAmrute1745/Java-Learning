@@ -17,4 +17,21 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Customer{int id;String name;Customer(){this(0,"Unknown");}Customer(int i,String n){id=i;name=n;}} class Concept02_Constructors{public static void main(String[]args){Customer c=new Customer(101,"Omkar");System.out.println(c.id+" "+c.name);}}
+
+class Customer {
+    int id;
+    String name;
+    Customer() {
+        this(0,"Unknown");
+    }
+    Customer(int i,String n) {
+        id=i;
+        name=n;
+    }
+}
+class Concept02_Constructors {
+    public static void main(String[]args) {
+        Customer c=new Customer(101,"Omkar");
+        System.out.println(c.id+" "+c.name);
+    }
+}

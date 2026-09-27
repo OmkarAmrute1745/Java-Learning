@@ -17,4 +17,20 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Payment{void pay(){System.out.println("Generic");}}class UpiPayment extends Payment{@Override void pay(){System.out.println("UPI");}} class Concept05_MethodOverriding{public static void main(String[]args){Payment p=new UpiPayment();p.pay();}}
+
+class Payment {
+    void pay() {
+        System.out.println("Generic");
+    }
+}
+class UpiPayment extends Payment {
+    @Override void pay() {
+        System.out.println("UPI");
+    }
+}
+class Concept05_MethodOverriding {
+    public static void main(String[]args) {
+        Payment p=new UpiPayment();
+        p.pay();
+    }
+}

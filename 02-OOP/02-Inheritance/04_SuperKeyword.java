@@ -17,4 +17,26 @@
  * Interview note:
  * Be able to explain this concept in simple words and give one practical example.
  */
-class Employee{protected String name;Employee(String n){name=n;}void show(){System.out.println(name);}}class Manager extends Employee{Manager(String n){super(n);}void managerShow(){super.show();}} class Concept04_SuperKeyword{public static void main(String[]args){new Manager("Omkar").managerShow();}}
+
+class Employee {
+    protected String name;
+    Employee(String n) {
+        name=n;
+    }
+    void show() {
+        System.out.println(name);
+    }
+}
+class Manager extends Employee {
+    Manager(String n) {
+        super(n);
+    }
+    void managerShow() {
+        super.show();
+    }
+}
+class Concept04_SuperKeyword {
+    public static void main(String[]args) {
+        new Manager("Omkar").managerShow();
+    }
+}
