@@ -1,21 +1,30 @@
 /*
  * JAVA MULTITHREADING
  * AREA: Concurrency Practice
- * CONCEPT: thread-safe counter
+ * CONCEPT: Thread-safe counter
  *
  * What is it?
- * thread-safe counter is an important Java concurrency concept.
+ * A thread-safe counter can be updated safely by multiple threads.
  *
  * Why do we need it?
- * It helps applications execute work concurrently and safely manage shared resources.
+ * Shared counters are common in metrics, request counts, and statistics.
  *
  * Key points:
- * - Understand the concept before memorizing syntax.
- * - Run the example and change the values.
- * - Think about thread safety and shared state.
+ * - AtomicInteger provides atomic increment operations.
+ * - It avoids a simple race condition on the counter.
  *
  * Interview note:
- * Be able to explain the concept in simple words and give one practical backend example.
+ * Know the difference between atomic operations and synchronized blocks.
  */
 
-class Concept02_ThreadSafeCounter { static final var count=new java.util.concurrent.atomic.AtomicInteger();public static void main(String[] args)throws Exception{Thread a=new Thread(()->{for(int i=0;i<1000;i++)count.incrementAndGet();});Thread b=new Thread(()->{for(int i=0;i<1000;i++)count.incrementAndGet();});a.start();b.start();a.join();b.join();System.out.println(count.get());}}\n
+class Concept02_ThreadSafeCounter {
+    static final java.util.concurrent.atomic.AtomicInteger COUNT =
+            new java.util.concurrent.atomic.AtomicInteger();
+
+    public static void main(String[] args) throws Exception {
+        Thread a = new Thread(() -> { for (int i = 0; i < 1000; i++) COUNT.incrementAndGet(); });
+        Thread b = new Thread(() -> { for (int i = 0; i < 1000; i++) COUNT.incrementAndGet(); });
+        a.start(); b.start(); a.join(); b.join();
+        System.out.println(COUNT.get());
+    }
+}
