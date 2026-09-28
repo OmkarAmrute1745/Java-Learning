@@ -1,8 +1,12 @@
-package functionalinterfaces;
-
+/**
+ * Topic: Predicate
+ *
+ * Java 8 learning example.
+ * Understand the concept, run the program, then modify it and practice.
+ */
 import java.util.function.Predicate;
 
-public class Concept02_Predicate {
+class Concept02_Predicate {
 
     public static void main(String[] args) {
         Predicate<Integer> isEven = number -> number % 2 == 0;

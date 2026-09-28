@@ -1,9 +1,13 @@
-package lambdaexpressions;
-
+/**
+ * Topic: LambdaWithCollection
+ *
+ * Java 8 learning example.
+ * Understand the concept, run the program, then modify it and practice.
+ */
 import java.util.Arrays;
 import java.util.List;
 
-public class Concept04_LambdaWithCollection {
+class Concept04_LambdaWithCollection {
 
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
