@@ -4,18 +4,42 @@
  * CONCEPT: ReadWriteLock
  *
  * What is it?
- * ReadWriteLock is an important Java concurrency concept.
+ * ReadWriteLock separates read and write access to shared data.
  *
  * Why do we need it?
- * It helps applications execute work concurrently and safely manage shared resources.
+ * It can allow multiple readers while keeping writes exclusive.
  *
  * Key points:
- * - Understand the concept before memorizing syntax.
- * - Run the example and change the values.
- * - Think about thread safety and shared state.
+ * - Read locks can be shared.
+ * - Write locks are exclusive.
+ * - Always unlock in finally.
  *
  * Interview note:
- * Be able to explain the concept in simple words and give one practical backend example.
+ * Explain when ReadWriteLock can be useful compared with synchronized.
  */
 
-class Concept03_ReadWriteLock { static class Store{final java.util.concurrent.locks.ReentrantReadWriteLock lock=new java.util.concurrent.locks.ReentrantReadWriteLock();String value="Java";void write(String v){lock.writeLock().lock();try{value=v;}finally{lock.writeLock().unlock();}}String read(){lock.readLock().lock();try{return value;}finally{lock.readLock().unlock();}}}public static void main(String[] args){Store s=new Store();s.write("Spring Boot");System.out.println(s.read());}}\n
+class Concept03_ReadWriteLock {
+    static class Store {
+        final java.util.concurrent.locks.ReentrantReadWriteLock lock =
+                new java.util.concurrent.locks.ReentrantReadWriteLock();
+        String value = "Java";
+
+        void write(String v) {
+            lock.writeLock().lock();
+            try { value = v; }
+            finally { lock.writeLock().unlock(); }
+        }
+
+        String read() {
+            lock.readLock().lock();
+            try { return value; }
+            finally { lock.readLock().unlock(); }
+        }
+    }
+
+    public static void main(String[] args) {
+        Store store = new Store();
+        store.write("Spring Boot");
+        System.out.println(store.read());
+    }
+}
